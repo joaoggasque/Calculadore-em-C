@@ -23,8 +23,26 @@ int main(){
         resultado = num1 + num2;
         printf("Resultado: %.2f\n", resultado);
         break;
-    
+    case 2:
+        resultado = num1 - num2;
+        printf("Resultado: %.2f\n", resultado);
+        break;
+    case 3:
+        resultado = num1 * num2;
+        printf("Resultado: %.2f\n", resultado);
+        break;
+    case 4:
+        if (num2 != 0) {
+        resultado = num1 / num2;
+        printf("Resultado: %.2f\n", resultado);
+        } else {
+            printf("Divisão por zero não é permitida.\n");
+        }
+        break;
     default:
+        printf("Operador inválido.\n");
         break;
     }
+
+    return 0;
 }
