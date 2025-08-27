@@ -4,17 +4,22 @@ int main(){
     float num1, num2, resultado;
     int operador;
 
-    printf("Digite o primeiro número: ");
+    //do {}
+
+    printf("Digite o primeiro numero: ");
     scanf("%f", &num1);
 
-    printf("Digite o segundo número: ");
+    printf("Digite o segundo numero: ");
     scanf("%f", &num2);
 
     printf("Selecione o operador:\n");
-    printf("1 - Adição\n");
-    printf("2 - Subtração\n");
-    printf("3 - Multiplicação\n");
-    printf("4 - Divisão\n");
+    printf("=======================\n");
+    printf("1 - Adiçao\n");
+    printf("2 - Subtraçao\n");
+    printf("3 - Multiplicaçao\n");
+    printf("4 - Divisao\n");
+    printf("=======================\n");
+
 
     scanf("%d", &operador);
 
@@ -36,13 +41,15 @@ int main(){
         resultado = num1 / num2;
         printf("Resultado: %.2f\n", resultado);
         } else {
-            printf("Divisão por zero não é permitida.\n");
+            printf("Divisao por zero nao eh permitida.\n");
         }
         break;
     default:
-        printf("Operador inválido.\n");
+        printf("Operador invalido.\n");
         break;
     }
 
     return 0;
+
+    
 }
